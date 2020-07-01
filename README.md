@@ -4,3 +4,5 @@
 
 - Face API Library: https://github.com/justadudewhohacks/face-api.js
 - Models Used: https://github.com/WebDevSimplified/Face-Detection-JavaScript/tree/master/models
+
+An easy way to implement a face detection API using javascript, a webcam stream via HTML, drawing facial benchmarks, and setting emotion through facial expressions in real time.
