@@ -29,7 +29,7 @@ document.getElementById('playVid').addEventListener('play', () => {
       faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
     }, 100)
   })
-};
+
 
 // document.getElementById('playVid').onclick = function (){
 //   video.addEventListener('play', () => {
