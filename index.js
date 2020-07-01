@@ -15,20 +15,6 @@ function startVideo() {
   )
 }
 
-function countdown() {
-     var counter = 60;
-     var interval = setInterval(function() {
-       counter--;
-       if (counter == 0) {
-         clearInterval(interval);
-         random_user();
-       } else {
-         document.getElementById('time').text(counter);
-         console.log("Timer --> " + counter);
-       }
-     }, 10);
-   }
-
 video.addEventListener('play', () => {
   const canvas = faceapi.createCanvasFromMedia(video)
   document.body.append(canvas)
@@ -42,5 +28,4 @@ video.addEventListener('play', () => {
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
   }, 100)
-  countdown();
 })
